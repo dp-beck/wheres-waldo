@@ -1,7 +1,7 @@
-function Game () {
+function Game (props) {
     return (
         <div>
-            Game
+            {props.name}
         </div>
     );
 }

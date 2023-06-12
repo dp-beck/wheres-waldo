@@ -18,7 +18,7 @@ Here is a list of to-dos -- (not quite pseudo code)
         ~~i. Where's Waldo photos (1-4)~~
         ~~ii. Icons of Where's Waldo Characters~~
     B. Set up the Structure of the App
-        i. One Home/Landing Page, where the scene will be selected and there is a link to the Leaderboard. The page also has a description of the game and icons of the characters to find.
+        ~~i. One Home/Landing Page, where the scene will be selected and there is a link to the Leaderboard. The page also has a description of the game and icons of the characters to find.~~
         ii. One page per scene: The photo will take up the majority of the page. The page will also have a link to take you back to the home page. The page will have:
             a. a Timer
             b. a pop up menu of characters to select when searching the page

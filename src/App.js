@@ -6,16 +6,14 @@ import NotFound from './NotFound';
 
 function App() {
     return (
-      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/ancient-greece" element={<Game />} />
-          <Route path="/beach" element={<Game />}/>
-          <Route path="/castle" element={<Game />} />
+          <Route path="/ancient-greece" element={<Game name="Ancient Greece"/>} />
+          <Route path="/beach" element={<Game name="Beach" />}/>
+          <Route path="/castle" element={<Game name="Castle" />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="*" element={<NotFound />} /> 
         </Routes>
-      </BrowserRouter>
       );
   }
   
