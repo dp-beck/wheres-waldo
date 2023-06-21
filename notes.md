@@ -23,9 +23,18 @@ Here is a list of to-dos -- (not quite pseudo code)
             a. a Timer
             b. a pop up menu of characters to select when searching the page
             c. a pop up form asking for name to display top ten scores
+            Basic Look/Structure of Page
+                ~~1. Game Component should be separated into a Header Bar and the Image Body~~
+                ~~2. Add IMG to Image Body and size appropriately via CSS~~
+                ~~3. Add Link to Home in Header Bar~~
+            Timer
+                4. Implement a timer function that runs on page load and stops once the condition of all characters having been found is met. At that point, add time to state.
+                5. Implement a visual display of the timer on the header bard
+            Selecting portions of the image...
+        
         iii. Leaderboard: This page will have its own three sub-pages - one per scene; each page displays a list of the top ten shortest times and names for solving the puzzles.
     C. **Test before writing**
-    D. Home Page
+    ~~D. Home Page~~
     E. Scene Pages
     F. Leaderboard
 3. Write up the Readme for the App

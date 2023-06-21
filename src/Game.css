@@ -1,0 +1,28 @@
+img {
+    max-width: 100%;
+    height:auto;
+}
+
+.game-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+}
+
+.game-header h1 {
+    grid-column: 1 / span 2;
+}
+
+#character-menu {
+    border: 1px solid black;
+    background-color: white;
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    top: 0;
+    left: 0;
+}
+
+.character-menu-toggle {
+    display: none;
+}

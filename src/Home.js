@@ -11,7 +11,9 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div>
-      <header>Where's Waldo?</header>
+      <header>
+        <h1>Where's Waldo</h1>
+      </header>
       <main>
         <div className='link-to-game'>
           <Link to="/ancient-greece">
