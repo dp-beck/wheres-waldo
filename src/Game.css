@@ -1,12 +1,18 @@
 img {
     max-width: 100%;
     height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid lightgrey;
+    border-radius: 10%;
+    box-shadow: 10px 5px 5px lightgray;
 }
 
 .game-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .game-header h1 {
@@ -16,13 +22,40 @@ img {
 #character-menu {
     border: 1px solid black;
     background-color: white;
-    position: fixed;
+    position: absolute;
     height: 100px;
     width: 100px;
     top: 0;
     left: 0;
 }
 
-.character-menu-toggle {
+.menu-item:hover{
+    background-color: gray;
+    color: red;
+}
+
+.toggle {
     display: none;
+}
+
+#selector-circle {
+    border: 5px dotted red;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+}
+
+#answer-popup {
+    border: 5px solid rgb(255, 0, 0);
+    background-color: white;
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.found-toggle {
+    opacity: 0.2;
 }

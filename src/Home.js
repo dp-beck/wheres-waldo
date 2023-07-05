@@ -1,6 +1,6 @@
 import './Home.css';
 import ancientGreece from './resources/ancient-greece.jpg';
-import beach from  './resources/beach.png';
+import beach from  './resources/beach.jpeg';
 import castle from './resources/castle.jpg'
 import waldoIcon from './resources/waldo-icon.png';
 import odlawIcon from './resources/odlaw-icon.gif';

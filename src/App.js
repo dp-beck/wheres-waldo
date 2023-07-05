@@ -5,15 +5,15 @@ import Leaderboard from './Leaderboard';
 import NotFound from './NotFound';
 
 import ancientGreece from './resources/ancient-greece.jpg';
-import beach from  './resources/beach.png';
+import beach from  './resources/beach.jpeg';
 import castle from './resources/castle.jpg'
 
 function App() {
 
     const correctCoordinates = {
-      beachWaldo: [0.497, 0.375],
-      beachOdlaw: [0, 0],
-      beachWizard: [0, 0]
+      beachWaldo: [0.530, 0.486],
+      beachOdlaw: [0.246, 0.490],
+      beachWizard: [0.627, 0.488]
     };
 
     return (

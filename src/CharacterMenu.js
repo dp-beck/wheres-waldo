@@ -4,10 +4,10 @@ import wizardIcon from './resources/wizard-icon.gif';
 
 function CharacterMenu (props) {
     return (
-        <div id='character-menu' className='character-menu-toggle'>
-            <div onClick={props.compareCoordinates}>Waldo</div>
-            <div onClick={props.compareCoordinates}>Odlaw</div>
-            <div onClick={props.compareCoordinates}>Wizard</div>
+        <div id='character-menu' className='toggle'>
+            <div className="menu-item" onClick={props.compareCoordinates}>Waldo</div>
+            <div className="menu-item" onClick={props.compareCoordinates}>Odlaw</div>
+            <div className="menu-item" onClick={props.compareCoordinates}>Wizard</div>
         </div>
     )
 }
