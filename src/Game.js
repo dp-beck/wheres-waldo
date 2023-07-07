@@ -2,6 +2,7 @@ import './Game.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import CharacterMenu from './CharacterMenu';
+import Timer from './Timer';
 
 import waldoIcon from './resources/waldo-icon.png';
 import odlawIcon from './resources/odlaw-icon.gif';
@@ -17,6 +18,7 @@ function Game (props) {
     const [waldoFound, setWaldoFound] = useState(false);
     const [odlawFound, setOdlawFound] = useState(false);
     const [wizardFound, setWizardFound] = useState(false);
+    const [allFound, setAllFound] = useState(false);
 
     // TO DO -- CURRENTLY IN PROGRESS -- FUNCTIONALITY TO TIME HOW LONG IT TAKES;
     // TEST WHEN DONE; LIKELY MOVE TO SEPARATE MODULES/COMPONENTS FOR BETTER READING
@@ -95,9 +97,16 @@ function Game (props) {
                 default:
                     break;
             };
-        }
+        }; 
     }
-    
+
+    // need this to fire after every render -- change to useState??
+    function checkWin() {
+        if (waldoFound && odlawFound && wizardFound) {
+            setAllFound(true);
+        };
+    }
+
     function displayCharacterList(e) {
         const menu = document.getElementById("character-menu");
         menu.classList.toggle('toggle');
@@ -143,12 +152,6 @@ function Game (props) {
         updateFoundStatus(result, e);
     }
 
-    // Timer Function:
-    // 1. Initialize a new time on page load, starting at 0
-    // 2. Stop Timer Once the following conditions are met:
-    //      A. Waldo is marked as found
-    //      B. Odlaw is marked as found
-    //      C. Wizrd is marked as found
     return (
         <div className="game">
             <header className="game-header">
@@ -159,9 +162,9 @@ function Game (props) {
                     <img src={wizardIcon} className='character-icon' id='wizard-icon' alt='Icon of Wizard'/>
                 </div>
 
-                <div>
-                    TIMER
-                </div>
+                <Timer
+                    allFound = {allFound}
+                    />
             </header>
             <div className="game-body">
                 <img src={props.image} alt="Game" onClick={pictureClickHandler}/>
