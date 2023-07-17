@@ -59,10 +59,19 @@ main {
 .link-to-leaderboard {
     grid-column: 3;
     border-radius: 10px;
-    background-color: rgb(206, 173, 41);
     width: fit-content;
     height: fit-content;
     padding: 5px;
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
     align-self: center;
+    size: 20px;
+}
+
+.link-to-leaderboard:hover{
+    background-color: green;
+}
+
+.link-to-leaderboard:hover h1{
+    background-color: green;
+    color: white;
 }

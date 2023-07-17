@@ -2,6 +2,9 @@ import waldoIcon from './resources/waldo-icon.png';
 import odlawIcon from './resources/odlaw-icon.gif';
 import wizardIcon from './resources/wizard-icon.gif';
 
+//ReStyle
+//Add Icon Small
+
 function CharacterMenu (props) {
     return (
         <div id='character-menu' className='toggle'>

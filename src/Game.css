@@ -29,6 +29,21 @@ img {
     left: 0;
 }
 
+.character-icon {
+}
+
+#time {
+    align-self: center;
+    justify-self: center;
+}
+
+#time p {
+    border: 1px solid black;
+    box-shadow: 10px 5px 5px lightgray;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+}
 .menu-item:hover{
     background-color: gray;
     color: red;
@@ -46,16 +61,50 @@ img {
     position: absolute;
 }
 
-#answer-popup {
+#answer-popup, #popup-win-form-wrapper {
     border: 5px solid rgb(255, 0, 0);
     background-color: white;
+    border-radius: 10px;
     height: 50px;
     width: 100px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#popup-win-form-wrapper {
+    border: 5px solid rgb(255, 0, 0);
+    background-color: white;
+    border-radius: 10px;
+    position: fixed;
+    height: fit-content;
+    width: 500px;
+    top: 40%;
+    left: 30%;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
 }
 
 .found-toggle {
     opacity: 0.2;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+#home-link {
+    border: 1px solid brown;
+    background-color: green;
+    color: white;
+    border-radius: 10%;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: 50%;
+    font-weight: 500;
 }

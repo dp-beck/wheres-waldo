@@ -1,12 +1,11 @@
 import './Home.css';
-import ancientGreece from './resources/ancient-greece.jpg';
+import street from './resources/street.jpeg';
 import beach from  './resources/beach.jpeg';
-import castle from './resources/castle.jpg'
+import skiSlope from './resources/ski-slope.jpeg'
 import waldoIcon from './resources/waldo-icon.png';
 import odlawIcon from './resources/odlaw-icon.gif';
 import wizardIcon from './resources/wizard-icon.gif';
 import { Link } from "react-router-dom";
-
 
 function Home() {
   return (
@@ -16,9 +15,9 @@ function Home() {
       </header>
       <main>
         <div className='link-to-game'>
-          <Link to="/ancient-greece">
-          <img src={ancientGreece} className='waldo-map-icon' alt='Icon of Ancient Greece'/>
-          <p>Ancient Greece</p>
+          <Link to="/street">
+          <img src={street} className='waldo-map-icon' alt='Icon of Street'/>
+          <p>Street</p>
           </Link>
         </div>
 
@@ -30,9 +29,9 @@ function Home() {
         </div>
 
         <div className='link-to-game'>
-        <Link to="/castle">
-          <img src={castle} className='waldo-map-icon' alt='Icon of Castle'/>
-          <p>Castle</p>
+        <Link to="/ski-slope">
+          <img src={skiSlope} className='waldo-map-icon' alt='Icon of Ski Slope'/>
+          <p>Ski Slope</p>
           </Link>
         </div>
 
@@ -51,7 +50,7 @@ function Home() {
 
         <div className='link-to-leaderboard'>
           <Link to="/leaderboard">
-            Leaderboard
+            <h1>Leaderboard</h1>
           </Link>
         </div>
       </main>
