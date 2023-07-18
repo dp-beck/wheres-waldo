@@ -1,9 +1,7 @@
-// LEADERBOARD SHOULD LINK TO HOME PAGE
-
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore , collection, onSnapshot, query, getDocs } from "firebase/firestore";
+import { getFirestore , collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 
 
 const firebaseConfig = {
@@ -18,7 +16,6 @@ const firebaseConfig = {
   
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
   
 const db = getFirestore(app);
 
@@ -81,6 +78,10 @@ function Leaderboard () {
                       <li>{highScore.name + ": " + highScore.score/1000 + " seconds"}</li>)
                   } )}
               </ol>
+              
+              <div className='footer'>
+                <Link id="home-link" to="/">Home</Link>
+            </div>
 
         </div>
     );
