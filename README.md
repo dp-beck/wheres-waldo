@@ -1,3 +1,8 @@
+# TO DO
+1. Fix GH Pages Deployment
+2. Re-Style to Look Nicer
+3. Write a Nice README.MD for this one
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
