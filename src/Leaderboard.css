@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+
+}
+
+.leaderboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.leaderboard-section {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 15rem;
+    box-shadow: 10px 5px 5px lightgray;
+}
+
+.leaderboard-section h2 {
+    text-align: center;
+}
+
+.leaderboard-section ol {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

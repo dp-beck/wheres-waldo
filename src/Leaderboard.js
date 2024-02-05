@@ -1,3 +1,4 @@
+import './Leaderboard.css';
 import { initializeApp } from "firebase/app";
 import { getFirestore , collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from 'react';
@@ -47,19 +48,23 @@ function Leaderboard () {
 
   return (
         <div>
-            <h1>Leaderboard</h1>
-
-            <h2>Beach</h2>
-            <ol>
-              {highScores.filter(highScore => highScore.level === 'Beach')
-                .sort(compareScores)
-                .map((highScore) => {
-                  return (
-                    <li>{highScore.name + ": " + highScore.score/1000 + " seconds"}</li>)
-                } )}
-            </ol>
+          <h1>Leaderboard</h1>
+          <div className='leaderboard'>
             
-            <h2>Street</h2>
+            <div className="leaderboard-section">
+              <h2>Beach</h2>
+              <ol>
+                {highScores.filter(highScore => highScore.level === 'Beach')
+                  .sort(compareScores)
+                  .map((highScore) => {
+                    return (
+                      <li>{highScore.name + ": " + highScore.score/1000 + " seconds"}</li>)
+                  } )}
+              </ol>
+            </div>
+
+            <div className='leaderboard-section'>
+              <h2>Street</h2>
               <ol>
                 {highScores.filter(highScore => highScore.level === 'Street')
                   .sort(compareScores)
@@ -68,7 +73,9 @@ function Leaderboard () {
                       <li>{highScore.name + ": " + highScore.score/1000 + " seconds"}</li>)
                   } )}
               </ol>
+            </div>
 
+            <div className='leaderboard-section'> 
               <h2>Ski Slope</h2>
               <ol>
                 {highScores.filter(highScore => highScore.level === 'Ski Slope')
@@ -78,10 +85,13 @@ function Leaderboard () {
                       <li>{highScore.name + ": " + highScore.score/1000 + " seconds"}</li>)
                   } )}
               </ol>
-              
-              <div className='footer'>
-                <Link id="home-link" to="/">Home</Link>
             </div>
+
+          </div>
+
+          <div className='footer'>
+              <Link id="home-link" to="/">Home</Link>
+          </div>
 
         </div>
     );
