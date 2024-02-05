@@ -4,6 +4,8 @@
 
 This is an implementation of the popular Where's Waldo? game using React. It contains three different Where's Waldo images, and uses React Router DOM to manage the routes to the different Where's Waldo? images. The game saves the time it took for you to find three of the characters in the image in a Google Firebase Realtime Database and displays those scores on a separate leaderboard page. Enjoy! 
 
+Live Link: [Where's Waldo?](https://dp-beck.github.io/wheres-waldo/)
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
