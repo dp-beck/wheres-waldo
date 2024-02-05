@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wheres-waldo/static/css/main.7a6e8c4a.css",
-    "main.js": "/wheres-waldo/static/js/main.e53c1ecc.js",
+    "main.css": "/wheres-waldo/static/css/main.b4bde63a.css",
+    "main.js": "/wheres-waldo/static/js/main.752375c2.js",
     "static/media/ski-slope.jpeg": "/wheres-waldo/static/media/ski-slope.9736162ac89c68ce67a0.jpeg",
     "static/media/street.jpeg": "/wheres-waldo/static/media/street.9026e30a7dc2e7251b66.jpeg",
     "static/media/waldo-icon.png": "/wheres-waldo/static/media/waldo-icon.28796fd4cca23fd85b68.png",
@@ -9,11 +9,11 @@
     "static/media/odlaw-icon.gif": "/wheres-waldo/static/media/odlaw-icon.ac0c172cf21d341947fa.gif",
     "static/media/wizard-icon.gif": "/wheres-waldo/static/media/wizard-icon.5f51dcd92eb6ecada103.gif",
     "index.html": "/wheres-waldo/index.html",
-    "main.7a6e8c4a.css.map": "/wheres-waldo/static/css/main.7a6e8c4a.css.map",
-    "main.e53c1ecc.js.map": "/wheres-waldo/static/js/main.e53c1ecc.js.map"
+    "main.b4bde63a.css.map": "/wheres-waldo/static/css/main.b4bde63a.css.map",
+    "main.752375c2.js.map": "/wheres-waldo/static/js/main.752375c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a6e8c4a.css",
-    "static/js/main.e53c1ecc.js"
+    "static/css/main.b4bde63a.css",
+    "static/js/main.752375c2.js"
   ]
 }
